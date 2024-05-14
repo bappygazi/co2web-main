@@ -1,5 +1,9 @@
 footer {
+  position: absolute;
+  bottom: 0;
   height: 108px;
+  width: 97%;
+  margin: 0 auto;
   padding: 0 16px;
   z-index: 99;
   background-color: transparent;
@@ -10,7 +14,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     height: calc(100% - 2px);
-    padding: 16px 0;
+    box-sizing: border-box;
+    padding-top: 16px;
     padding-left: 1vw;
   }
   .footer-copyright-text {

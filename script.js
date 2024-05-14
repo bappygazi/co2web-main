@@ -38,12 +38,14 @@ hamburger.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const sliderOne = document.querySelector("#slide-1");
   const sliderTwo = document.querySelector("#slide-2");
+  const sliderTwoMb = document.querySelector("#slide-2-small");
   const nextEls = document.querySelectorAll(".next");
   const prevEls = document.querySelectorAll(".prev");
   nextEls.forEach((nextEl) => {
     nextEl.addEventListener("click", () => {
-      sliderOne.classList.remove("active");
-      sliderTwo.classList.add("active");
+      sliderOne.classList.remove("activeSlide");
+      sliderTwo.classList.add("activeSlide");
+      sliderTwoMb.classList.add("activeSlide");
       nextEl.style.visibility = "hidden";
       nextEl.style.opacity = 0;
       prevEls.forEach((prevEl) => {
@@ -54,8 +56,9 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   prevEls.forEach((prevEl) => {
     prevEl.addEventListener("click", () => {
-      sliderTwo.classList.remove("active");
-      sliderOne.classList.add("active");
+      sliderTwo.classList.remove("activeSlide");
+      sliderTwoMb.classList.remove("activeSlide");
+      sliderOne.classList.add("activeSlide");
       prevEl.style.visibility = "hidden";
       prevEl.style.opacity = 0;
       nextEls.forEach((nextEl) => {
