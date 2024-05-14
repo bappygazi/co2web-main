@@ -1,0 +1,37 @@
+footer {
+  height: 108px;
+  padding: 0 16px;
+  z-index: 99;
+  background-color: transparent;
+  .footerWrapper {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(100% - 2px);
+    padding: 16px 0;
+    padding-left: 1vw;
+  }
+  .footer-copyright-text {
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 16px;
+  }
+  .footer_nav_list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    // Style ligne menu en pied de page
+    li {
+      list-style-type: none;
+      padding: 16px;
+      // Style de chaque anchor en pied de page
+      a {
+        text-decoration: none;
+        color: $color-darkgreen;
+        font-size: 22px;
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A propos</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo/CO2-logo.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="menu-icon" id="hamburger">
+        <img src="./images/hamburger.svg" alt="menu-icon" />
+      </div>
+      <ul class="menu-lists">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Mode d’emploi</a></li>
+        <li><a href="#">Trouver un velib</a></li>
+        <li><a href="#">Calculateur</a></li>
+        <li><a href="#" class="active">A propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <!-- menu-list-small-devices -->
+      <ul class="menu-list-small-devices smallNavInActive">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Mode d’emploi</a></li>
+        <li><a href="#">Trouver un velib</a></li>
+        <li><a href="#">Calculateur</a></li>
+        <li><a href="#" class="active">A propos</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="slider-container">
+        <div class="slider">
+          <div id="slide-1" class="slideItem active">
+            <div class="slide_img_wrapper_helper">
+              <figure class="slide_img_wrapper">
+                <img src="images/computer.svg" alt="Image 1" />
+              </figure>
+              <div class="next">
+                <img src="./images/Chevron.svg" alt="Chevron" />
+              </div>
+            </div>
+            <div class="slide_text_box">
+              <h1>À propos du projet</h1>
+              <p>
+                Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada
+                tristique blandit elementum dapibus proin pretium rhoncus,
+                viverra sagittis libero, libero varius accumsan ridiculus amet
+                nam duis sit vestibulum nibh eget ultrices magna facilisis
+                potenti
+              </p>
+
+              <div class="gradient-line"></div>
+              <p>
+                Aenean egestas fermentum, at elementum ut ut eu, feugiat sit
+                feugiat morbi id ipsum tincidunt
+              </p>
+              <!-- <div class="thin-gradient-line"></div> -->
+            </div>
+          </div>
+          <div id="slide-2" class="slideItem">
+            <div class="slide_img_wrapper_helper">
+              <div class="prev">
+                <img src="./images/Chevron.svg" alt="Chevron" />
+              </div>
+              <figure class="slide_img_wrapper">
+                <img src="images/Groupe 146.svg" alt="Image 1" />
+              </figure>
+            </div>
+            <div class="slide_text_box">
+              <h1>À propos du projet</h1>
+              <p>
+                Arcu, ultrices amet, ac rhoncus eget egestas diam a malesuada
+                tristique blandit elementum dapibus proin pretium rhoncus,
+                viverra sagittis libero, libero varius accumsan ridiculus amet
+                nam duis sit vestibulum nibh eget ultrices magna facilisis
+                potenti
+              </p>
+
+              <div class="gradient-line"></div>
+              <p>
+                Aenean egestas fermentum, at elementum ut ut eu, feugiat sit
+                feugiat morbi id ipsum tincidunt
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="sliderInSmallDevice"></div> -->
+        <div class="prev"><img src="./images/Chevron.svg" alt="Chevron" /></div>
+        <div class="next"><img src="./images/Chevron.svg" alt="Chevron" /></div>
+      </div>
+    </main>
+    <footer>
+      <div class="thin-gradient-line"></div>
+      <div class="footerWrapper">
+        <p class="footer-copyright-text">
+          Copyright © 2022 CO2WEB. All rights reserved.
+        </p>
+        <ul class="footer_nav_list">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Mode d’emploi</a></li>
+          <li><a href="#">Trouver un velib</a></li>
+          <li><a href="#">Calculateur</a></li>
+          <li><a href="#" class="active">A propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
