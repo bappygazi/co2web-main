@@ -240,7 +240,6 @@ body {
   color: #313131;
   margin-bottom: 50px;
   position: relative;
-  margin-left: 2vw;
 }
 .slide_text_box h1::before {
   content: "";
