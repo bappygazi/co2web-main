@@ -11,15 +11,18 @@ body {
   z-index: 99;
   position: fixed;
   top: 50%;
+
   img {
     width: 100%;
   }
 }
+
 .next {
   right: 5vw;
   top: 50%;
   transform: translateY(-50%);
 }
+
 .prev {
   left: 5vw;
   transform: translateY(-50%) rotate(180deg);
@@ -37,26 +40,22 @@ body {
   background: linear-gradient(to right, #b5d653, #79c258);
 }
 
-// .slider {
-//   height: 100%;
-// }
-
-// main {
-// height: calc(100vh - 108px);
-// }
 .slider-container {
   height: 100%;
-  // max-width: 1920px;
-  // margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
+
 #slide-1 {
   visibility: hidden;
   opacity: 0;
 }
+
 #slide-2 {
   visibility: hidden;
   opacity: 0;
 }
+
 #slide-2-small {
   display: none;
   visibility: hidden;
@@ -67,26 +66,25 @@ body {
   visibility: visible !important;
   opacity: 1 !important;
 }
+
 .slideItem {
-  padding-right: 2rem;
-  padding-top: 7vw;
   transition: all 0.3s ease;
   position: absolute;
   display: flex;
   align-items: center;
   gap: 141px;
 }
+
 .slideItemTwo {
-  // margin-top: -4px;
   background: url(../images/slide-2-bg.svg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
-  // background-size: 60%;
   z-index: -1;
   height: calc(100vh - 75px);
   visibility: hidden;
   opacity: 0;
+
   .slide_text_box {
     position: absolute;
     top: 50%;
@@ -97,6 +95,7 @@ body {
 
 .slide_img_wrapper_helper {
   width: 40%;
+
   .next,
   .prev {
     display: none;
@@ -104,29 +103,39 @@ body {
     right: unset;
     top: unset;
   }
+
   .next {
     transform: unset;
+    margin-right: 2rem;
   }
+
   .prev {
     transform: rotate(180deg);
+    margin-left: 2rem;
   }
 }
+
 .slide_img_wrapper {
   width: 100%;
+
   img {
     width: 100%;
   }
 }
+
 .slide_text_box {
   $color-black: #313131;
   max-width: 700px;
   padding: 0 25px;
+
   h1 {
     font-size: 50px;
     font-weight: 600;
     color: $color-black;
     margin-bottom: 50px;
     position: relative;
+    margin-left: 2vw;
+
     &::before {
       content: "";
       background-color: $color-lightgreen;
@@ -139,6 +148,7 @@ body {
       left: -2vw;
     }
   }
+
   p {
     font-size: 22px;
     color: $color-black;
@@ -147,6 +157,7 @@ body {
     line-height: 50px;
     font-family: "Roboto", sans-serif;
   }
+
   .gradient-line {
     max-width: 300px;
     margin: 25px 0;

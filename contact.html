@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
+  </head>
+  <body class="body">
+    <!-- header start -->
+    <header class="header">
+      <div class="logo">
+        <a href="/">
+          <img src="images/logo/CO2-logo.svg" alt="Logo" />
+        </a>
+      </div>
+
+      <div class="menu-icon" id="hamburger">
+        <img src="./images/hamburger.svg" alt="menu-icon" />
+      </div>
+      <ul class="menu-lists">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Mode d’emploi</a></li>
+        <li><a href="#">Trouver un velib</a></li>
+        <li><a href="#">Calculateur</a></li>
+        <li><a href="./apropos.html">A propos</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+      <!-- menu-list-small-devices -->
+      <ul class="menu-list-small-devices smallNavInActive">
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Mode d’emploi</a></li>
+        <li><a href="#">Trouver un velib</a></li>
+        <li><a href="#">Calculateur</a></li>
+        <li><a href="./apropos.html">A propos</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+    </header>
+    <!-- header end -->
+
+    <main class="main">
+      <section id="contact_container" class="contact_form_wrapper">
+        <h2 class="contact_heading_txt">Contactez-nous</h2>
+        <div class="contact_form_container">
+          <!-- shapes start -->
+          <div class="flower_shape_left">
+            <div class="left_1">
+              <img class="shape" src="./images/l-1.svg" alt="l1" />
+            </div>
+            <div class="left_2">
+              <img class="shape" src="./images/l-2.svg" alt="l2" />
+            </div>
+          </div>
+          <!-- shapes start -->
+          <form class="contact_form_contents" action="#">
+            <div class="input_lists">
+              <div id="int1">
+                <label class="inputLabel" for="name">Prénom</label>
+                <input class="inputField" type="text" name="prenom" id="prenom" placeholder="Prénom" />
+              </div>
+              <div id="int2">
+                <label class="inputLabel" for="name">Nom</label>
+                <input class="inputField" type="text" name="nom" id="nom" placeholder="Nom" />
+              </div>
+              <div id="int3">
+                <label class="inputLabel" for="email">Votre email</label>
+                <input class="inputField" type="email" name="email" id="email" placeholder="votre@email.com" />
+              </div>
+              <div id="int4">
+                <label class="inputLabel" for="email">Téléphone</label>
+                <input class="inputField" type="tel" name="number" id="number" placeholder="Numéro" />
+              </div>
+              <div id="int5">
+                <label class="inputLabel" for="message">Votre message</label>
+                <textarea class="inputField" name="message" id="message" rows="1" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <div class="submit_btn_container">
+              <button class="submit_btn" type="submit">Commencer</button>
+            </div>
+          </form>
+          <!-- shapes start -->
+          <div class="flower_shape_right">
+            <div class="right_1">
+              <img class="shape" src="./images/r-1.svg" alt="r1" />
+            </div>
+            <div class="right_2">
+              <img class="shape" src="./images/r-2.svg" alt="r2" />
+            </div>
+          </div>
+          <!-- shapes start -->
+        </div>
+      </section>
+    </main>
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="thin-gradient-line"></div>
+      <div class="footerWrapper">
+        <p class="footer-copyright-text">Copyright © 2022 CO2WEB. All rights reserved.</p>
+        <ul class="footer_nav_list">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Mode d’emploi</a></li>
+          <li><a href="#">Trouver un velib</a></li>
+          <li><a href="#">Calculateur</a></li>
+          <li><a href="./apropos.html">A propos</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src="script.js"></script>
+  </body>
+</html>
