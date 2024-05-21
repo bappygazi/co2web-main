@@ -125,7 +125,7 @@ body {
 .next,
 .prev {
   cursor: pointer;
-  z-index: 99;
+  z-index: 9;
   position: fixed;
   top: 50%;
 }
@@ -743,8 +743,6 @@ body {
   }
   footer {
     width: 90%;
-    top: 100%;
-    bottom: unset;
     height: auto;
   }
   footer .footerWrapper {
@@ -757,9 +755,15 @@ body {
   #slide-2-small {
     display: flex;
   }
+}
+@media (max-width: 1024px) and (max-width: 1024px) {
   main .slider-container {
     margin-top: 25px;
+    height: auto;
+    display: flow-root;
   }
+}
+@media (max-width: 1024px) {
   main .slideItem {
     gap: 25px;
     flex-direction: column;
@@ -802,7 +806,12 @@ body {
     line-height: unset;
   }
 }
-@media (max-width: 425px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  main .slider-container {
+    padding-top: 150px;
+  }
+}
+@media (max-width: 768px) {
   header .logo {
     width: 112px;
   }
@@ -821,6 +830,10 @@ body {
   footer .footer-copyright-text {
     font-size: 18px;
   }
+  main .slider-container {
+    margin-top: 60px !important;
+    height: 66vh;
+  }
   main .slideItem .slide_text_box h1 {
     font-size: 30px;
     top: -12%;
@@ -833,5 +846,8 @@ body {
   main .prev {
     top: 25%;
     width: 30px;
+  }
+  .apos_footer {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
