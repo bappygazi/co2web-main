@@ -483,7 +483,7 @@ body {
     margin-top: 50px;
   }
   header {
-    z-index: 9 !important;
+    z-index: 99 !important;
   }
   footer {
     position: static !important;
@@ -834,7 +834,7 @@ body {
     font-size: 18px;
   }
   main .slider-container {
-    margin-top: 60px !important;
+    margin-top: 170px !important;
     height: 66vh;
   }
   main .slideItem .slide_text_box h1 {
