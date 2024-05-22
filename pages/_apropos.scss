@@ -78,10 +78,11 @@ body {
 .slideItemTwo {
   background: url(../images/slide-2-bg.svg);
   background-repeat: no-repeat;
-  background-position: top right;
-  background-size: contain;
+  background-position: bottom right;
+  background-size: 50%;
   z-index: -1;
-  height: calc(100vh - 75px);
+  width: 100%;
+  height: 100vh;
   visibility: hidden;
   opacity: 0;
 
